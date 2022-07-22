@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Variables */
+:root {
+    /* Font */
+    --main-font: 'Outfit', sans-serif;
+    /* Font Size */
+    --paragraph-font-size: 18px;
+    /* Font Weights */
+    --weight-light: 300;
+    --weight-medium: 400;
+    --weight-heavy: 600;
+    /* Colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dark-blue-background: hsl(217, 54%, 11%);
+    --dark-blue-card-background: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--dark-blue-background);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--soft-blue);
+}
+
+footer, footer a {
+    text-align: center;
+    color: var(--soft-blue);
+}
+
+.container {
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 300px;
+    background-color: var(--dark-blue-card-background);
+    padding: 1.4rem;
+    border-radius: 20px;
+}
+
+.card h1 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: var(--weight-heavy);
+    padding: 5px 0;
+}
+
+.card h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card p {
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--weight-light);
+}
+
+.header-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.icon-container {
+    opacity: 0;
+    position: absolute;
+    top: 42%;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-43%);
+    background-color: var(--cyan);
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.icon-container img {
+    height: 100%;
+    transform: scale(.17);
+}
+
+.icon-container:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+.value {
+    display: flex;
+    justify-content: space-between;
+}
+
+.value p {
+    font-size: 16px;
+    font-weight: var(--weight-heavy);
+}
+
+#crypto {
+    color: var(--cyan);
+}
+
+#crypto img {
+    margin-right: 5px;
+}
+
+#time {
+    font-weight: var(--weight-medium);
+}
+
+#time img {
+    margin-right: 5px;
+}
+
+
+
+.profile {
+    border-top: 1px solid var(--dark-blue-line);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.profile a {
+    color: var(--white);
+}
+
+.profile a:hover {
+    color: var(--cyan);
+}
+
+.profile p {
+    font-size: 1rem;
+}
